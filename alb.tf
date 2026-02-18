@@ -1,8 +1,7 @@
 # ==========================================================
 # ALB (Internet-facing)
-# Matches your diagram:
-# - ALB in public subnets across 2 AZs
-# - Forwards HTTP traffic to EC2 instances (ASG) in private subnets
+# ALB in public subnets across 2 AZs
+# Forwards HTTP traffic to EC2 instances (ASG) in private subnets
 # ==========================================================
 
 resource "aws_lb" "this" {

@@ -1,8 +1,7 @@
 # ==========================================================
 # IAM for EC2 App Instances
-# Purpose:
-# - Allow EC2 instances to assume a role (required for any instance profile)
-# - Optionally enable SSM Session Manager (no SSH required)
+# Allow EC2 instances to assume a role (required for any instance profile)
+# Optionally enable SSM Session Manager (no SSH required)
 # ==========================================================
 
 # Trust policy: allows EC2 service to assume this role
@@ -34,7 +33,6 @@ resource "aws_iam_instance_profile" "app" {
 }
 
 # Optional: enables AWS Systems Manager (SSM) so you can connect without SSH
-# This is best practice for private subnets.
 resource "aws_iam_role_policy_attachment" "ssm" {
   count      = var.enable_ssm ? 1 : 0
   role       = aws_iam_role.app.name

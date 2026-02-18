@@ -1,9 +1,8 @@
 # ==========================================================
 # EFS (Shared Storage)
-# Matches your diagram:
-# - One EFS file system
-# - Mount targets in each AZ (in the private app subnets)
-# - Only EC2 instances (app SG) can access via NFS 2049
+# One EFS file system
+# Mount targets in each AZ (in the private app subnets)
+# Only EC2 instances (app SG) can access via NFS 2049
 # ==========================================================
 
 # Creates the EFS file system (regional service)

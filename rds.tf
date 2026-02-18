@@ -1,9 +1,8 @@
 # ==========================================================
 # RDS (PostgreSQL Multi-AZ)
-# Matches your diagram:
-# - RDS Primary + Standby (Multi-AZ) managed by AWS
-# - Deployed in private DB subnets
-# - Only reachable from EC2 app instances (via SG)
+# RDS Primary + Standby (Multi-AZ) managed by AWS
+# Deployed in private DB subnets
+# Only reachable from EC2 app instances (via SG)
 # ==========================================================
 
 resource "aws_db_subnet_group" "this" {

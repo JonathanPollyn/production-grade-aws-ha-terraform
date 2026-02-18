@@ -1,10 +1,9 @@
 # ==========================================================
 # Security Groups
-# Matches your diagram security flow:
-# - Internet -> ALB (80)
-# - ALB -> EC2 instances (app_port, default 80)
-# - EC2 instances -> RDS Postgres (5432)
-# - EC2 instances -> EFS (2049)
+# Internet -> ALB (80)
+# ALB -> EC2 instances (app_port, default 80)
+# EC2 instances -> RDS Postgres (5432)
+# EC2 instances -> EFS (2049)
 # ==========================================================
 
 # ALB SG: allows inbound HTTP from the internet

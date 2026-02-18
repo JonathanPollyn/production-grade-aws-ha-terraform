@@ -1,11 +1,10 @@
 # ==========================================================
 # VPC + Subnets + Routing
-# Matches your diagram:
-# - Public subnets (ALB) in 2 AZs
-# - Private app subnets (EC2/ASG) in 2 AZs
-# - Private DB subnets (RDS) in 2 AZs
-# - IGW for public subnets
-# - NAT Gateways for private subnets outbound access
+# Public subnets (ALB) in 2 AZs
+# Private app subnets (EC2/ASG) in 2 AZs
+# Private DB subnets (RDS) in 2 AZs
+# IGW for public subnets
+# NAT Gateways for private subnets outbound access
 # ==========================================================
 
 resource "aws_vpc" "this" {

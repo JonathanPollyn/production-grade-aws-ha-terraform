@@ -1,10 +1,8 @@
 # ==========================================================
 # Route 53 (Optional)
-# Purpose:
-# - If enable_route53 = true, create a DNS record that points your domain to the ALB.
-# Note:
-# - This does NOT implement DNS failover because the architecture has only one ALB target.
-# - ALB health is handled by target group health checks.
+# If enable_route53 = true, create a DNS record that points your domain to the ALB.
+# This does NOT implement DNS failover because the architecture has only one ALB target.
+# ALB health is handled by target group health checks.
 # ==========================================================
 
 resource "aws_route53_record" "app" {

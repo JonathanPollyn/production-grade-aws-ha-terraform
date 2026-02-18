@@ -1,10 +1,9 @@
 # ==========================================================
 # ASG + Launch Template (EC2 Web Tier)
-# Matches your diagram:
-# - EC2 instances in private app subnets across 2 AZs
-# - Auto Scaling Group attached to ALB target group
-# - User data installs Apache, writes /health, deploys index.html/style.css
-# - Mounts EFS for shared storage
+# EC2 instances in private app subnets across 2 AZs
+# Auto Scaling Group attached to ALB target group
+# User data installs Apache, writes /health, deploys index.html/style.css
+# Mounts EFS for shared storage
 # ==========================================================
 
 # ----------------------------
@@ -20,11 +19,11 @@ locals {
   style_css_b64  = base64encode(file("${path.module}/web/style.css"))
 
   # User data runs at instance boot. It:
-  # - installs Apache and EFS utilities
-  # - starts Apache
-  # - writes a /health file for ALB health checks
-  # - writes your static site files
-  # - mounts EFS to /mnt/efs (shared storage)
+  # installs Apache and EFS utilities
+  # tarts Apache
+  # writes a /health file for ALB health checks
+  # writes your static site files
+  # mounts EFS to /mnt/efs (shared storage)
   user_data = <<-EOT
     #!/bin/bash
     set -e

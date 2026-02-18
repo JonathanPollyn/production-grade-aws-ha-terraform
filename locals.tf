@@ -17,5 +17,3 @@ locals {
   )
 }
 
-# Optional sanity check output for debugging (remove later if you want)
-# output "selected_azs" { value = local.azs }

@@ -1,6 +1,5 @@
 # ==========================================================
-# Outputs
-# These make testing and validation easier after terraform apply
+# Outputs: Used for testing and validation easier after terraform apply
 # ==========================================================
 
 output "alb_dns_name" {

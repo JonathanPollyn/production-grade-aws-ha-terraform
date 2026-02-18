@@ -1,8 +1,7 @@
 # ==========================================================
 # S3 (Optional)
-# Purpose in this project:
-# - Keep a copy of your static site artifacts (index.html, style.css) in S3
-# - Bucket is private by design (no public website hosting enabled)
+# Keep a copy of your static site artifacts (index.html, style.css) in S3
+# Bucket is private by design (no public website hosting enabled)
 # ==========================================================
 
 resource "aws_s3_bucket" "site" {
