@@ -1,0 +1,5 @@
+:root { --pad: 24px; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+.container { padding: var(--pad); max-width: 820px; margin: 0 auto; }
+h1 { margin-top: 0; }
+.muted { color: #555; }

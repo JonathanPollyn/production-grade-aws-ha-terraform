@@ -1,0 +1,32 @@
+# ===============================
+# Terraform
+# ===============================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Sensitive variable files
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform plan files
+*.tfplan
+
+# Provider lock (optional to commit, your choice)
+.terraform.lock.hcl
+
+# ===============================
+# OS / Editor junk
+# ===============================
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# ===============================
+# Logs
+# ===============================
+*.log

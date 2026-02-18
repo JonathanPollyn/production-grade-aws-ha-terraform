@@ -1,0 +1,10 @@
+db_password = "CHANGE_ME_STRONG_PASSWORD"
+
+# enable_route53 = true
+# hosted_zone_id = "Z1234567890"
+# domain_name    = "app.example.com"
+
+# enable_s3_site = true
+
+db_password = "UseAStrongPasswordHere123!"
+
